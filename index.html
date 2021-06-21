@@ -1,0 +1,271 @@
+<!Doctype=html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>portfolio</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/688a5f742f.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxdn.bootstrapcdn.com/bootrap/3.3.7/css/bootstrap.min.css">
+<style>
+html{
+margin:0px;
+padding:0px;
+}
+body{
+    margin:0px;
+    padding:0px;
+    background-image:url('coffee.jpg');
+    background-size:cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.arrow{
+    background-color:#343a40;
+    position: relative;
+    height:48px;
+    z-index: 100;
+    
+}
+
+.arrow::after, .arrow::before{
+    position: absolute;
+    content: '';
+    width: 55px;
+    height:45px;
+    background-color:#343a40; 
+    bottom:-1em;
+    z-index: 100;
+}
+.arrow::before{
+right:50%;
+transform:skew(0,30deg);
+}
+.arrow::after{
+left:50%;
+transform:skew(0,-30deg);
+}
+.center p{
+  white-space:nowrap;
+  overflow: hidden;
+  font-size:22px;
+  border-right: solid 3px white;
+  animation: animate-txt 3s steps(29,end) 1s 1 normal both ,
+  animate-coursor 600ms steps(29,end) infinite;
+}
+.homepg{
+  height: 100%;
+  width:100%;
+  color:white;
+  margin:0px;
+padding:0px;
+}
+
+.center{
+display: grid;
+place-items: center;
+height:92.5%;
+width: 100%;
+margin:0px;
+padding:0px;
+}
+.center img{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+}
+
+
+#nav a{
+  color:white;
+  
+}
+@media screen and (min-width:601px){
+  .center p{
+    font-size:20px !important;
+  }
+  .center h1{
+    font-size:25px !important;
+  }
+  .me{
+    width:50%;
+  }
+  .why{
+    width:50%;
+    position: relative;
+  left:300px;
+  top:200px;
+  }
+  @keyframes animate-txt{
+  from{width:0;}
+  to{width:300px;}
+}
+
+@keyframes animate-coursor{
+from{border-right-color:white;}
+to{border-right-color:transparent;}
+
+}
+}
+@media screen and (max-width:601px){
+  .center p{
+    font-size:16px !important;
+  }
+  .center h1{
+    font-size:23px !important;
+  }
+  .me{
+    width:70%;
+    display: flex;
+  }
+  .why{
+    width:70%;
+    display: flex;
+    position: relative;
+  left:30px;
+  top:300px;
+  }
+  @keyframes animate-txt{
+  from{width:0;}
+  to{width:245px;}
+}
+
+@keyframes animate-coursor{
+from{border-right-color:white;}
+to{border-right-color:transparent;}
+
+}
+}
+#about{
+  height:100%;
+  
+}
+.content{
+background-image:linear-gradient(50deg, #070708a9 60%, #181201a8 40%);
+margin:0px;
+padding:0px;
+height:20%;
+display :grid;
+place-items: center;
+font-family:'Courier New', Courier, monospace;
+}
+
+.content h1{
+animation: popup 1.5s 1 both;
+}
+
+@keyframes popup{
+ 0%{transform:translateY(250px);}
+100%{transform:translateY(0);}
+}
+.me{
+  background-color:#070708b2;
+  color:white;
+  display:grid;
+  place-items:center;
+  padding:30px 50px;
+  margin:5%;
+  animation: popup 1.5s 1 both;
+  position: absolute;
+  
+}
+.flex{
+  display:inline-block;
+}
+.why{
+  background-color:#181201a8;
+  color:white;
+  display:grid;
+  place-items:center;
+  padding:30px 50px;
+  margin:5%;
+  animation: popup 1.5s 1 both;
+  
+}
+</style>
+  </head>
+  <body>
+    <!--home page-->
+    <div class="homepg">
+<div class="arrow">
+  <!--nav bar-->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark " id="nav">
+    <a class="navbar-brand" href="#">Startup Ace</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon" style="color:white;"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Skills</a>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
+    </div>
+    <!--intro-->
+    <div class="center">
+      <div>
+        <img src="port.jpeg">
+<h1 ><b>Elsa Kristen</b></h1>
+<p>A Developer, To fetch you clients</p> 
+
+      </div>
+</div>
+</div>
+<!--about section-->
+<div id="About">
+<div class="content">
+<h1 style="color:white;">ABOUT</h1>
+</div>
+<div class="flex">
+<div class="me container">
+  <p>
+<b>I've worked with online coaches just like you.</b><br>
+And...<br>
+They just love the websites!<br>
+wanna see some?<br>
+scroll on to <a href="#projects" style="color:white;text-decoration: underline;">Projects</a> <p>
+</div>
+<div class="why container">
+<p><b>websites are hard when you're trying to do it all on your own.</b><br>
+Let me help your make bussiness easier,and gobal..<br>
+Your website refects Your work there by fethcing clients..
+you just focus on helping your clients ful-lfill their dreams.And I'll help you full-fill yours.
+
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+      </body>
+      </html>
