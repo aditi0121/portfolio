@@ -231,12 +231,15 @@ html{
       
      }
     
-    
+    .cover:active,
+    .cover:focus,
      .cover:hover{
       
        display:none;
      }
 
+    .cover:active + .hide,
+     .cover:focus + .hide,
      .cover:hover + .hide{
       display:grid;
       place-items:center;
