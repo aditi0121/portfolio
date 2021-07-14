@@ -361,7 +361,7 @@ html{
   position: absolute;
   width: 0px;
   height: 100%;
-  background-image: linear-gradient(120deg, var( --pent-color) 60%, var(var(--el-color)) 40%);
+  background-image: linear-gradient(120deg, var( --pent-color) 60%, var(--el-color) 40%);
   transition: width 0.4s;
   overflow: hidden;
   z-index: 2;
