@@ -118,7 +118,7 @@ html{
     }
     @media screen and (min-width:601px){
       .center p{
-        font-size:16px !important;
+        font-size:18px !important;
       }
 
       .hid p{
@@ -200,7 +200,7 @@ html{
     }
     @media screen and (max-width:601px){
       .center p{
-        font-size:25px !important;
+        font-size:16px !important;
       }
 
       .hid p{
