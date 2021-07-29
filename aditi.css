@@ -769,6 +769,14 @@ padding:20px;
   color: var(--secondary-color);
 }
 
+.testimonials h1{
+    text-align: center;
+    background-color: var(--frteen-color);
+    color: white;
+    margin: 0px;
+    padding-top:25px;
+  }
+
 .heading span {
   font-size: 18px;
   display: block;
